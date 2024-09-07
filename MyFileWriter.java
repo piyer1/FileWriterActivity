@@ -51,7 +51,8 @@ public class MyFileWriter {
         bufferedWriter2.write("password123");
         bufferedWriter2.close();
 
-        Path path = Paths.get("/Users/pranaviyer/FileWriterActivity/.secret");
+        Path path = Paths.get("/Users/pranaviyer/FileWriterActivity/.secret/secretfile.dat");
         Files.createDirectory(path);
+
     }
 }
