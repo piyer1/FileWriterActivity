@@ -3,7 +3,7 @@ import java.nio.file.*;
 import java.nio.charset.StandardCharsets;
 
 public class MyFileWriter {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String data = "exampletext";
         String fileName1 = "example1.txt";
         String fileName2 = "example2.txt";
@@ -45,5 +45,11 @@ public class MyFileWriter {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        String passwordFile = ".hidden_password.txt";
+        BufferedWriter bufferedWriter2 = new BufferedWriter(new FileWriter(passwordFile));
+        bufferedWriter2.write("password123");
+        bufferedWriter2.close();
+
     }
 }
