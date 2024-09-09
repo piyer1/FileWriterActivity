@@ -53,6 +53,11 @@ public class MyFileWriter {
 
         Path path = Paths.get("/Users/pranaviyer/FileWriterActivity/.secret/secretfile.dat");
         Files.createDirectory(path);
+        MyFileWriter.printFileSize(fileName1);
 
+    }
+
+    private static void printFileSize(String fileName) throws IOException {
+        System.out.println(Files.size(Paths.get(fileName)));
     }
 }
