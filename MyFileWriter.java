@@ -48,7 +48,7 @@ public class MyFileWriter {
 
         String passwordFile = ".hidden_password.txt";
         BufferedWriter bufferedWriter2 = new BufferedWriter(new FileWriter(passwordFile));
-        bufferedWriter2.write("stinkypoopoo");
+        bufferedWriter2.write("password123");
         bufferedWriter2.close();
 
         Path path = Paths.get("/Users/pranaviyer/FileWriterActivity/.secret/secretfile.dat");
